@@ -18,6 +18,9 @@ import {
   FormHelperText,
 } from "@mui/material";
 
+import FormularioSimple from "./components/formularioSimple"
+import FormularioTarjeta from "./components/formularioTarjeta"
+
 function Ficha03(params) {
   const [nombre, setNombre] = useState("");
 
@@ -26,6 +29,8 @@ function Ficha03(params) {
       <Navbar></Navbar>
       <PageTitle subtext="Formularios">Ficha-03</PageTitle>
 
+
+      {/* CONTENEDOR DE ACTIVIDADES */}  
       <Grid
         container
         spacing={1}
@@ -34,6 +39,7 @@ function Ficha03(params) {
           alignItems: "flex-start",
         }}
       >
+        {/* ACTIVIDAD 3.1 */}  
         <Grid
           size={{ xs: 12, md: 6 }}
           sx={{
@@ -48,20 +54,24 @@ function Ficha03(params) {
             Actividad práctica 3.1 – Input básico
           </Typography>
 
+          <Typography variant="h1" sx={{ mb: 2 }}>
+            {nombre == "" ? "¡Hola!" : `¡Hola ${nombre}!`}
+          </Typography>
+
           <TextField
             id="filled-basic"
             label="Inserte su nombre"
-            variant="filled"
+            color="secondary"
+            variant="outlined"
             slotProps={{ htmlInput: { "data-testid": "…" } }}
             onChange={(e) => setNombre(e.target.value)}
           />
-          <FormHelperText id="my-helper-text">Y será saludado</FormHelperText>
+          <FormHelperText id="my-helper-text">Y será saludado.</FormHelperText>
 
-          <Typography variant="h1" sx={{ mb: 2 }}>
-            {nombre == "" ? "" : `¡Hola ${nombre}!`}
-          </Typography>
         </Grid>
 
+
+        {/* ACTIVIDAD 3.2 */}  
         <Grid
           size={{ xs: 12, md: 6 }}
           sx={{
@@ -75,8 +85,13 @@ function Ficha03(params) {
           <Typography variant="h4" sx={{ mb: 2 }}>
             Actividad práctica 3.2 – Formulario simple
           </Typography>
+
+          <FormularioSimple /> 
+          
         </Grid>
 
+
+        {/* ACTIVIDAD 3.3 */}  
         <Grid
           size={{ xs: 12, md: 6 }}
           sx={{
@@ -90,10 +105,14 @@ function Ficha03(params) {
           <Typography variant="h4" sx={{ mb: 2 }}>
             Actividad práctica 3.3 – Crear tarjeta desde un formulario
           </Typography>
+          <FormularioTarjeta /> 
         </Grid>
+
       </Grid>
     </>
   );
 }
 
 export default Ficha03;
+
+
