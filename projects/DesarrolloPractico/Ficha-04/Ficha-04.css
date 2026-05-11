@@ -1,0 +1,72 @@
+:root {
+    --bg-color: #080808;
+    --box-bg: #1b1b1b;
+    /*--box-border: #dee21f;*/
+    --text-color-primary: #bababc;
+    --text-color-secundary: #656060;
+    --text-bold-color: rgb(252, 254, 188);
+    --accent-color: #dee21f; 
+    --text-opacity: 0.8;
+    --h1-color: #ad99f5; 
+    --h2-color: #9583d8; 
+    --h3-color: #8873d3; 
+    --h4-color: #7c66cc; 
+    --h5-color: #6954b6; 
+    --h6-color: #5c49a2; 
+    --link-color: #cf9aff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.product-section {
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--box-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    color: var(--text-color-primary);
+}
+
+.card-subtitle {
+    color: var(--text-color-secundary);
+}
+
+.card-button {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card-button:hover {
+    background-color: #c23616;
+}

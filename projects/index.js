@@ -9,6 +9,8 @@ const Ficha02 = lazy(() => import("./DesarrolloPractico/Ficha-02/Ficha-02"));
 import F02IMG from "./DesarrolloPractico/Ficha-02/assets/images/F02.png"
 const Ficha03 = lazy(() => import("./DesarrolloPractico/Ficha-03/Ficha-03"));
 import F03IMG from "./DesarrolloPractico/Ficha-03/assets/images/F03.png"
+const Ficha04 = lazy(() => import("./DesarrolloPractico/Ficha-04/Ficha-04"));
+import F04IMG from "./DesarrolloPractico/Ficha-04/assets/images/F04.png"
 
 
 {/* TEORICO */}
@@ -54,6 +56,15 @@ export const projects = {
       description: "Listas .map",
       tecnologias: "",
       capture: F03IMG
+    },
+    {
+      id: "f04",
+      name: "Ficha 04",
+      path: "ficha-04",
+      component: Ficha04,
+      description: "Listas .map",
+      tecnologias: "",
+      capture: F04IMG
     },
   ],
   
