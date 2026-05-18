@@ -1,3 +1,20 @@
-/*
-Crear un componente ProductList que reciba los productos por props y los renderice usando .map().
-*/ 
+import ProductCard from './ProductCard';
+
+function ProductList({ productos, agregarAlCarrito }) {
+    return (
+        <>
+            {productos.map(producto => (
+                <ProductCard 
+                    key={producto.id}
+                    nombre={producto.nombre}
+                    precio={producto.precio}
+                    descripcion={producto.descripcion}
+                    imagen={producto.imagen}
+                    alAgregar={agregarAlCarrito}
+                />
+            ))}
+        </>
+    )
+}
+
+export default ProductList;

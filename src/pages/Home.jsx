@@ -50,6 +50,7 @@ export default function Home() {
         captura={teoricoIMG}>
         </Card>
       </Box>
+      <a href="https://roadmap.sh"><img src="https://roadmap.sh/card/tall/6a0328e2a342ccbe043d79cf?variant=dark&roadmaps=%2Cfull-stack" alt="roadmap.sh"/></a>
     </Box>
   );
 }

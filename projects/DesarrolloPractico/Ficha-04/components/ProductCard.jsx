@@ -1,10 +1,4 @@
-/* Cards de cada producto 
-- nombre
-- precio
-- imágen
-- botón “Agregar al carrito”
-- key
-*/
+import "./ProductCard.css";
 
 function ProductCard({nombre, precio, descripcion, imagen, alAgregar}) {
 

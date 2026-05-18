@@ -24,7 +24,9 @@
 # COMPONENTES (area/)
 # ==========================================
 
+
 # ARQUITECTURA
+# ==========================================
 
 "area/auth":
   - changed-files:
@@ -56,6 +58,8 @@
       - any-glob-to-any-file: '**/*helmet*'
 
 # UX
+# ==========================================
+
 
 "area/ui":
   - changed-files:
@@ -90,6 +94,8 @@
       - any-glob-to-any-file: '**/accessibility/**/*'
 
 # Negocio
+# ==========================================
+
 
 "area/billing":
   - changed-files:
@@ -128,6 +134,8 @@
       - any-glob-to-any-file: '**/config-panel/**/*'
 
 # PRODUCTO
+# ==========================================
+
 
 "area/realtime":
   - changed-files:
@@ -157,6 +165,8 @@
       - any-glob-to-any-file: '**/images/**/*'
 
 # DEVOPS
+# ==========================================
+
 
 "area/docker":
   - changed-files:
@@ -183,6 +193,8 @@
       - any-glob-to-any-file: '**/.gitlab-ci.yml'
 
 # QA
+# ==========================================
+
 
 "area/testing-unit":
   - changed-files:
