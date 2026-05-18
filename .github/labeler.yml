@@ -1,0 +1,203 @@
+# .github/labeler.yml
+
+# ==========================================
+# EQUIPOS (sig/)
+# ==========================================
+
+"sig/frontend":
+  - changed-files:
+      - any-glob-to-any-file: '**/*.{css,scss,ts,tsx,js,jsx,html}'
+
+"sig/backend":
+  - changed-files:
+      - any-glob-to-any-file: 'server/**/*'
+      - any-glob-to-any-file: '**/*.{py,go,java,rb}'
+
+"sig/devops":
+  - changed-files:
+      - any-glob-to-any-file: '.github/workflows/**/*'
+      - any-glob-to-any-file: '**/docker/**/*'
+      - any-glob-to-any-file: '**/Dockerfile'
+      - any-glob-to-any-file: '**/docker-compose.yml'
+
+# ==========================================
+# COMPONENTES (area/)
+# ==========================================
+
+# ARQUITECTURA
+
+"area/auth":
+  - changed-files:
+      - any-glob-to-any-file: '**/auth/**/*'
+      - any-glob-to-any-file: '**/login/**/*'
+      - any-glob-to-any-file: '**/register/**/*'
+
+"area/api":
+  - changed-files:
+      - any-glob-to-any-file: '**/api/**/*'
+      - any-glob-to-any-file: '**/routes/**/*'
+      - any-glob-to-any-file: '**/controllers/**/*'
+      - any-glob-to-any-file: '**/endpoints/**/*'
+      - any-glob-to-any-file: '**/middlewares/**/*'
+
+"area/db":
+  - changed-files:
+      - any-glob-to-any-file: '**/db/**/*'
+      - any-glob-to-any-file: '**/database/**/*'
+      - any-glob-to-any-file: '**/migrations/**/*'
+      - any-glob-to-any-file: '**/models/**/*'
+      - any-glob-to-any-file: '**/schemas/**/*'
+
+"area/security":
+  - changed-files:
+      - any-glob-to-any-file: '**/security/**/*'
+      - any-glob-to-any-file: '**/crypto/**/*'
+      - any-glob-to-any-file: '**/cors/**/*'
+      - any-glob-to-any-file: '**/*helmet*'
+
+# UX
+
+"area/ui":
+  - changed-files:
+      - any-glob-to-any-file: '**/components/**/*'
+      - any-glob-to-any-file: '**/views/**/*'
+      - any-glob-to-any-file: '**/pages/**/*'
+      - any-glob-to-any-file: '**/styles/**/*'
+
+"area/ux":
+  - changed-files:
+      - any-glob-to-any-file: '**/animations/**/*'
+      - any-glob-to-any-file: '**/transitions/**/*'
+      - any-glob-to-any-file: '**/hooks/useSwipe*'
+      - any-glob-to-any-file: '**/hooks/useDrag*'
+
+"area/design-system":
+  - changed-files:
+      - any-glob-to-any-file: '**/theme/**/*'
+      - any-glob-to-any-file: '**/design-system/**/*'
+      - any-glob-to-any-file: '**/tokens/**/*'
+
+"area/i18n":
+  - changed-files:
+      - any-glob-to-any-file: '**/locales/**/*'
+      - any-glob-to-any-file: '**/i18n/**/*'
+      - any-glob-to-any-file: '**/translations/**/*'
+      - any-glob-to-any-file: '**/*.locale.json'
+
+"area/accessibility":
+  - changed-files:
+      - any-glob-to-any-file: '**/a11y/**/*'
+      - any-glob-to-any-file: '**/accessibility/**/*'
+
+# Negocio
+
+"area/billing":
+  - changed-files:
+      - any-glob-to-any-file: '**/billing/**/*'
+      - any-glob-to-any-file: '**/payments/**/*'
+      - any-glob-to-any-file: '**/stripe/**/*'
+
+"area/users":
+  - changed-files:
+      - any-glob-to-any-file: '**/users/**/*'
+      - any-glob-to-any-file: '**/profile/**/*'
+      - any-glob-to-any-file: '**/avatars/**/*'
+
+"area/notifications":
+  - changed-files:
+      - any-glob-to-any-file: '**/notifications/**/*'
+      - any-glob-to-any-file: '**/emails/**/*'
+      - any-glob-to-any-file: '**/services/mail/**/*'
+
+"area/search":
+  - changed-files:
+      - any-glob-to-any-file: '**/search/**/*'
+      - any-glob-to-any-file: '**/filters/**/*'
+      - any-glob-to-any-file: '**/elasticsearch/**/*'
+
+"area/analytics":
+  - changed-files:
+      - any-glob-to-any-file: '**/analytics/**/*'
+      - any-glob-to-any-file: '**/metrics/**/*'
+      - any-glob-to-any-file: '**/reports/**/*'
+
+"area/settings":
+  - changed-files:
+      - any-glob-to-any-file: '**/settings/**/*'
+      - any-glob-to-any-file: '**/preferences/**/*'
+      - any-glob-to-any-file: '**/config-panel/**/*'
+
+# PRODUCTO
+
+"area/realtime":
+  - changed-files:
+      - any-glob-to-any-file: '**/sockets/**/*'
+      - any-glob-to-any-file: '**/websocket/**/*'
+      - any-glob-to-any-file: '**/sse/**/*'
+      - any-glob-to-any-file: '**/chat/**/*'
+
+"area/cache":
+  - changed-files:
+      - any-glob-to-any-file: '**/cache/**/*'
+      - any-glob-to-any-file: '**/redis/**/*'
+      - any-glob-to-any-file: '**/service-worker.js'
+
+"area/workers":
+  - changed-files:
+      - any-glob-to-any-file: '**/workers/**/*'
+      - any-glob-to-any-file: '**/queues/**/*'
+      - any-glob-to-any-file: '**/cron/**/*'
+      - any-glob-to-any-file: '**/jobs/**/*'
+
+"area/upload":
+  - changed-files:
+      - any-glob-to-any-file: '**/uploads/**/*'
+      - any-glob-to-any-file: '**/storage/**/*'
+      - any-glob-to-any-file: '**/s3/**/*'
+      - any-glob-to-any-file: '**/images/**/*'
+
+# DEVOPS
+
+"area/docker":
+  - changed-files:
+      - any-glob-to-any-file: '**/docker/**/*'
+      - any-glob-to-any-file: '**/Dockerfile*'
+      - any-glob-to-any-file: '**/docker-compose*'
+
+"area/logging":
+  - changed-files:
+      - any-glob-to-any-file: '**/logs/**/*'
+      - any-glob-to-any-file: '**/logging/**/*'
+      - any-glob-to-any-file: '**/logger/**/*'
+
+"area/monitoring":
+  - changed-files:
+      - any-glob-to-any-file: '**/monitoring/**/*'
+      - any-glob-to-any-file: '**/grafana/**/*'
+      - any-glob-to-any-file: '**/prometheus/**/*'
+
+"area/cicd":
+  - changed-files:
+      - any-glob-to-any-file: '.github/workflows/**/*'
+      - any-glob-to-any-file: '**/*jenkins*'
+      - any-glob-to-any-file: '**/.gitlab-ci.yml'
+
+# QA
+
+"area/testing-unit":
+  - changed-files:
+      - any-glob-to-any-file: '**/*.test.*'
+      - any-glob-to-any-file: '**/*.spec.*'
+      - any-glob-to-any-file: '**/__tests__/**/*'
+
+"area/testing-e2e":
+  - changed-files:
+      - any-glob-to-any-file: '**/cypress/**/*'
+      - any-glob-to-any-file: '**/playwright/**/*'
+      - any-glob-to-any-file: '**/e2e/**/*'
+
+"area/performance":
+  - changed-files:
+      - any-glob-to-any-file: '**/perf/**/*'
+      - any-glob-to-any-file: '**/performance/**/*'
+      - any-glob-to-any-file: '**/lighthouse/**/*'
