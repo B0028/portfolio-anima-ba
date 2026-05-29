@@ -11,6 +11,10 @@ const Ficha03 = lazy(() => import("./DesarrolloPractico/Ficha-03/Ficha-03"));
 import F03IMG from "./DesarrolloPractico/Ficha-03/assets/images/F03.png"
 const Ficha04 = lazy(() => import("./DesarrolloPractico/Ficha-04/Ficha-04"));
 import F04IMG from "./DesarrolloPractico/Ficha-04/assets/images/F04.png"
+const Ficha00B = lazy(() => import("./DesarrolloPractico/Ficha-00B/Ficha-00B"));
+import F00BIMG from "./DesarrolloPractico/Ficha-00B/assets/images/F00BIMG.png"
+const Ficha01B = lazy(() => import("./DesarrolloPractico/Ficha-01B/Ficha-01B"));
+import F01BIMG from "./DesarrolloPractico/Ficha-01B/assets/images/F01BIMG.png"
 
 
 {/* TEORICO */}
@@ -65,6 +69,24 @@ export const projects = {
       description: "Listas .map",
       tecnologias: "",
       capture: F04IMG
+    },
+    {
+      id: "f00B",
+      name: "Ficha 00 Backend",
+      path: "ficha-00B",
+      component: Ficha00B,
+      description: "Listas .map",
+      tecnologias: "",
+      capture: F00BIMG
+    },
+    {
+      id: "f01B",
+      name: "Ficha 01 Backend",
+      path: "ficha-01B",
+      component: Ficha01B,
+      description: "Listas .map",
+      tecnologias: "",
+      capture: F01BIMG
     },
   ],
   
