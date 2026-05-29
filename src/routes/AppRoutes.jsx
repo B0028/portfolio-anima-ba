@@ -3,6 +3,7 @@ import { Suspense } from "react";
 
 // HOME
 import PortFolio from "../layouts/PortFolio.jsx";
+import HomeLayout from "../layouts/HomeLayout.jsx"
 import Home from "../pages/Home.jsx"
 import About from "../pages/About.jsx"
 import DashboardPractico from "../pages/DesarrolloPractico.jsx"
@@ -17,13 +18,17 @@ export default function AppRoutes() {
     <Suspense fallback={<div>Cargando...</div>}>
       <Routes>
 
-        {/* HOME / PORTFOLIO */}
-        <Route path="/" element={<PortFolio />}>
+        {/* HOME */}
+        <Route path="/" element={<HomeLayout />}>
           <Route index element={<Home />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Route>
+
+        {/* PORTFOLIO */}
+        <Route path="/" element={<PortFolio />}>
           <Route path="about" element={<About />} />
           <Route path="desarrollo-practico" element={<DashboardPractico />} />
           <Route path="desarrollo-teorico" element={<DashboardTeorico />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
 
         {/* DESARROLLO PRÁCTICO */}
