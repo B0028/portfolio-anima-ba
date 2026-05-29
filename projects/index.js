@@ -1,5 +1,6 @@
 import { lazy } from "react";
 
+
 {/* PRÁCTICO */}
 const Ficha00 = lazy(() => import("./DesarrolloPractico/Ficha-00/Ficha-00"));
 import F00IMG from "./DesarrolloPractico/Ficha-00/assets/images/F00.png"
@@ -19,7 +20,10 @@ import F01BIMG from "./DesarrolloPractico/Ficha-01B/assets/images/F01BIMG.png"
 
 {/* TEORICO */}
 const Ejercicio01 = lazy(() => import("./DesarrolloTeorico/Ejercicio-01/Ejercicio-01"));
+
 const Ejercicio02 = lazy(() => import("./DesarrolloTeorico/Ejercicio-02/Ejercicio-02"));
+import EJ02 from "./DesarrolloTeorico/Ejercicio-02/assets/images/EJ02.png"
+
 
 export const projects = {
 
@@ -108,7 +112,7 @@ export const projects = {
       component: Ejercicio02,
       description: "SPA",
       tecnologias: "",
-      capture: F01IMG
+      capture: EJ02
     },
   ],
 };

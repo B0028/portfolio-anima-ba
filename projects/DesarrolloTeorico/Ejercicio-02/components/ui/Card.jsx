@@ -29,7 +29,7 @@ function Card() {
     >
       <CardMedia
         component="img"
-        height="180"
+        height="400"
         image={narutoImg}
         alt="Naruto"
       />
@@ -56,9 +56,9 @@ function Card() {
           <Typography color="text.secondary" sx={{ mb: 1 }}>
             Et aliquid nobis
           </Typography>
-          <Typography color="text.secondary">
+          {/*<Typography color="text.secondary">
             {new Date().toLocaleTimeString("es-UY")}
-          </Typography>
+          </Typography>*/}
 
         </div>
 

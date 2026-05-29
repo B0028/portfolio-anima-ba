@@ -1,4 +1,4 @@
-function Ejercicio01() {
-    return <p>Hola</p>
+function Ejercicio02() {
+    return <p>JISJ</p>
 }
-export default Ejercicio01;
+export default Ejercicio02;
