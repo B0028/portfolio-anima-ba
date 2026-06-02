@@ -20,7 +20,7 @@ export default function Home() {
         }}
       >    
         <Typography color="text.secondary">
-          Desarrollo Web Full Stack
+          Desarrollo web Fullstack
         </Typography>
         <Typography color="text.secondary">
           año: 2026

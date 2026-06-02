@@ -27,6 +27,9 @@ export default function AppRoutes() {
         {/* PORTFOLIO */}
         <Route path="/" element={<PortFolio />}>
           <Route path="about" element={<About />} />
+          <Route path="projects" element={<About />} />
+          <Route path="contact" element={<About />} />
+          <Route path="anima" element={<About />} />
           <Route path="desarrollo-practico" element={<DashboardPractico />} />
           <Route path="desarrollo-teorico" element={<DashboardTeorico />} />
         </Route>

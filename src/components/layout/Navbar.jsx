@@ -27,14 +27,23 @@ function Navbar() {
       }}
     >
       <Typography variant="body1" color="text.primary">
-        React · Fichas
+      
       </Typography>
       <Box component="nav" aria-label="Principal" sx={{ display: "flex", gap: 2.5 }}>
-        <NavLink style={navLinkStyle} to="/desarrollo-practico/ficha-00">
-          Ficha-00
+        <NavLink style={navLinkStyle} to="/">
+          Home
         </NavLink>
-        <NavLink style={navLinkStyle} to="/desarrollo-practico/ficha-01">
-          Ficha-01
+        <NavLink style={navLinkStyle} to="/about">
+          About
+        </NavLink>
+        <NavLink style={navLinkStyle} to="/projects">
+          Projects
+        </NavLink>
+        <NavLink style={navLinkStyle} to="/anima">
+          Anima
+        </NavLink>
+        <NavLink style={navLinkStyle} to="/contact">
+          Contact
         </NavLink>
       </Box>
     </Box>
