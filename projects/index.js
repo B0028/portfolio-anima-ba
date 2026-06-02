@@ -16,6 +16,8 @@ const Ficha00B = lazy(() => import("./DesarrolloPractico/Ficha-00B/Ficha-00B"));
 import F00BIMG from "./DesarrolloPractico/Ficha-00B/assets/images/F00BIMG.png"
 const Ficha01B = lazy(() => import("./DesarrolloPractico/Ficha-01B/Ficha-01B"));
 import F01BIMG from "./DesarrolloPractico/Ficha-01B/assets/images/F01BIMG.png"
+const Ficha02B = lazy(() => import("./DesarrolloPractico/Ficha-02B/Ficha-02B"));
+import F02BIMG from "./DesarrolloPractico/Ficha-02B/assets/images/F02BIMG.png"
 
 
 {/* TEORICO */}
@@ -91,6 +93,15 @@ export const projects = {
       description: "Listas .map",
       tecnologias: "",
       capture: F01BIMG
+    },
+    {
+      id: "f02B",
+      name: "Ficha 02 Backend",
+      path: "ficha-02B",
+      component: Ficha02B,
+      description: "Listas .map",
+      tecnologias: "",
+      capture: F02BIMG
     },
   ],
   
