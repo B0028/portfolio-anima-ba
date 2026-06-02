@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tokens": "docker run --rm -v $(pwd):/src style-dictionary/style-dictionary build --config tokens/config.json"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
