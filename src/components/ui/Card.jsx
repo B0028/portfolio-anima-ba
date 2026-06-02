@@ -17,20 +17,21 @@ function Card({ titulo, subtitulo, descripcion, link, captura }) {
             width: "100%",
             maxWidth: 300,
             height: "100%",
-            border: "1px solid",
-            borderColor: "divider",
+            // border: "1px solid",
+            borderColor: "primary.main",
             boxShadow: "none",
             borderRadius: 2,
             display: "flex",
+            backgroundColor: "#09090e",
             flexDirection: "column",
             transition: 'transform 0.2s, box-shadow 0.2s',
             '&:hover': {
                 transform: 'translateY(-10px)',
-                boxShadow: 24, 
+                boxShadow: "0px 10px 30px 0px #5500fd", 
             },
         }}
     >
-        <RouterLink to={link} style={{ textDecoration: 'none', color: 'inherit', height: '100%', display: 'flex', flexDirection: 'column' }}>
+        <RouterLink to={link} style={{ textDecoration: 'none', color: 'inherit', height: '100%', display: 'flex', flexDirection: 'column', backgroundColor: '#09090e' }}>
             <CardMedia
                 component="img"
                 height="180"

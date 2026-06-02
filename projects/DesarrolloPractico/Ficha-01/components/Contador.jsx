@@ -18,7 +18,7 @@ function Contador() {
           sx={{
             minWidth: "52px",
             bgcolor: "#e9d5ff",
-            color: "#5b21b6",
+            color: "primary.main",
             boxShadow: "none",
             "&:hover": { bgcolor: "#dcc2ff", boxShadow: "none" },
           }}

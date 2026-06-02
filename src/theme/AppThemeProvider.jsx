@@ -10,14 +10,14 @@ function AppThemeProvider({ children }) {
       createTheme({
         palette: {
           mode: prefersDarkMode ? "dark" : "light",
-          primary: { main: prefersDarkMode ? "#c084fc" : "#7c3aed" },
+          primary: { main: prefersDarkMode ? "#5500fd" : "#7c3aed" },
           text: {
             primary: prefersDarkMode ? "#f3f4f6" : "#08060d",
             secondary: prefersDarkMode ? "#9ca3af" : "#6b6375",
           },
           background: {
-            default: prefersDarkMode ? "#16171d" : "#ffffff",
-            paper: prefersDarkMode ? "#1f2028" : "#ffffff",
+            default: prefersDarkMode ? "#020204" : "#ffffff",
+            paper: prefersDarkMode ? "#09090e" : "#ffffff",
           },
         },
         typography: {
