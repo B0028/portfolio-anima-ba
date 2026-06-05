@@ -1,14 +1,20 @@
 {
-  "name": "vite-project",
+  "name": "portfolio-bakzy",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "repository": {
+    "url": "https://github.com/B0028/portfolio-anima-ba.git"
+  },
   "scripts": {
-    "dev": "vite --port 3173",
+    "dev": "vite --port 3173 --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "tokens": "docker run --rm -v $(pwd):/src style-dictionary/style-dictionary build --config tokens/config.json"
+    "tokens": "docker run --rm -v $(pwd):/src style-dictionary/style-dictionary build --config tokens/config.json",
+    "format:check": "npx prettier --check .",
+    "format:fix": "npx prettier --write .",
+    "format:debug": "npx prettier --debug-check ."
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -28,6 +34,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
+    "prettier": "3.8.3",
     "vite": "^8.0.4"
   }
 }
