@@ -1,5 +1,6 @@
 name: Bot de Advertencia de Breaking Change
-
+- name: Labeler
+  uses: actions/labeler@v6.1.0
 on:
   pull_request:
     types: [labeled]
@@ -14,7 +15,7 @@ jobs:
 
     steps:
       - name: Publicar comentario automático
-        uses: mshick/add-pr-comment@v2
+        uses: actions/labeler@v6.1.0
         with:
           message: |
             ## ⚠️ BREAKING CHANGE
@@ -28,3 +29,6 @@ jobs:
             ```bash
             npm run docker:breaking
             ```
+
+
+            

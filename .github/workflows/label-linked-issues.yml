@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
       - name: Detectar Etiquetas por Archivos
         id: detect-labels
-        uses: actions/labeler@v5
+        uses: actions/labeler@v6.1.0
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           sync-labels: false 
