@@ -1,6 +1,4 @@
-name: Bot de Advertencia de Breaking Change
-- name: Labeler
-  uses: actions/labeler@v6.1.0
+
 on:
   pull_request:
     types: [labeled]
